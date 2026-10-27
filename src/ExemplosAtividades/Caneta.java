@@ -1,11 +1,11 @@
 package ExemplosAtividades;
 
 public class Caneta {
-    String modelo;
-    String cor;
-    float ponta;
-    int carga;
-    boolean tampada;
+    public String modelo;
+    public String cor;
+    private float ponta;
+    protected int carga;
+    protected boolean tampada;
 
     public void status() {
         System.out.printf("Modelo: %s%n", this.modelo);
@@ -23,15 +23,11 @@ public class Caneta {
         }
     }
 
-    public void tampar() {
+    private void tampar() {
         this.tampada = true;
-        // this e substituido pelo nome do objeto que chamou
-        // no caso c1
-        // pra isso que server o this
-        //c1.tampada = true;
     }
 
-    public void destampar() {
+    private void destampar() {
         this.tampada = false;
     }
 }
