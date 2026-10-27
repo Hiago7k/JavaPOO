@@ -5,7 +5,7 @@ public class Caneta {
     public String cor;
     private float ponta;
     protected int carga;
-    protected boolean tampada;
+    private boolean tampada;
 
     public void status() {
         System.out.printf("Modelo: %s%n", this.modelo);
@@ -23,11 +23,11 @@ public class Caneta {
         }
     }
 
-    private void tampar() {
+    public void tampar() {
         this.tampada = true;
     }
 
-    private void destampar() {
+    public void destampar() {
         this.tampada = false;
     }
 }
