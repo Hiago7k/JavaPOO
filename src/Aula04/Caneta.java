@@ -6,9 +6,11 @@ public class Caneta {
     public boolean tampada;
     public String cor;
 
-    public Caneta() { // método construtor
-        this.tampar();
-        this.cor = "Azul";
+    public Caneta(String modelo, String cor, float ponta) {
+       this.modelo = modelo;
+       this.cor = cor;
+       this.setPonta(ponta);
+       this.tampar();
     }
 
     public String getModelo() {
