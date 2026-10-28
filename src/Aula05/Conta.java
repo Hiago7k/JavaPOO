@@ -7,9 +7,9 @@ public class Conta {
     private double saldo;
     private boolean status;
 
-    public Conta(boolean status, double saldo) {
-        this.status = status;
-        this.saldo = saldo;
+    public Conta() {
+        this.status = false;
+        this.saldo = 0;
     }
 
     public String getNumConta() {
@@ -69,6 +69,13 @@ public class Conta {
     }
 
     public  void fecharConta(String tipo, String donoConta){
+
+        if (this.saldo > 0){
+            System.out.println("Não pode fechar conta ela possui saldo");
+            return;
+        }
+
+        System.out.println("Conta fechada");
         this.status = false;
     }
 
