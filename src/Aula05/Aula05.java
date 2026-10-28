@@ -5,7 +5,7 @@ public class Aula05 {
         Conta cc = new Conta();
         Conta cp = new Conta();
 
-        cc.abrirConta("cc", "Hiago");
+        cc.abrirConta("cc", "Hiago", 23232);
 
         System.out.println(cc.getDonoConta());
         System.out.println(cc.getSaldo());
