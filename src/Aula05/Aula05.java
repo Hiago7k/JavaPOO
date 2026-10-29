@@ -4,18 +4,9 @@ public class Aula05 {
     static void main() {
         Conta cc = new Conta();
         Conta cp = new Conta();
-
         cc.abrirConta("cc", "Hiago", 23232);
-
-        System.out.println(cc.getDonoConta());
-        System.out.println(cc.getSaldo());
+        cc.exibeRelatorio();
         cc.pagarMensalidade();
-        System.out.println(cc.depositar(120));
-        System.out.println(cc.getSaldo());
-
-        System.out.println(cc.sacar(20));
-        System.out.println(cc.getSaldo());
-
 
         cc.sacar(88);
         cc.fecharConta("cc", "Hiago");

@@ -12,6 +12,15 @@ public class Conta {
         this.saldo = 0;
     }
 
+    public void exibeRelatorio(){
+        System.out.println("Exibindo dados");
+        System.out.printf("Nome: %s%n", getDonoConta());
+        System.out.printf("Numero: %d%n", getNumConta());
+        System.out.printf("Saldo: %.2f%n", getSaldo());
+        System.out.printf("Status: %b%n", isStatus());
+    }
+
+
     public int getNumConta() {
         return numConta;
     }
@@ -63,17 +72,19 @@ public class Conta {
     }
 
     public void abrirConta(String tipo, String donoConta, int numero) {
-        if (this.tipoConta.equals("CC")) {
+
+
+        if (tipo.equals("CC")) {
             this.saldo += 50f;
         }
 
-        if (this.tipoConta.equals("CP")) {
+        if (tipo.equals("CP")) {
             this.saldo += 150f;
         }
-
+                                  // maneira correta seria utilizar o setter por conta do encapsulamento
         this.donoConta = donoConta; // todos esses atributos aqui podem ser substituido pelos setters
-        this.tipoConta = tipo;
         this.status = true;
+        this.tipoConta = tipo;
         this.numConta = numero;
     }
 
