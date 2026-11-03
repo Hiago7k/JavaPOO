@@ -1,6 +1,6 @@
 package Aula06;
 
-public class ControleRemote {
+public class ControleRemote implements  Controlador{
     // Atributos
     private int volume;
     private boolean ligado;
@@ -38,4 +38,58 @@ public class ControleRemote {
     public void setLigado(boolean ligado) {
         this.ligado = ligado;
     }
+
+    // Métodos Abstratos
+
+    @Override
+    public void ligar() {
+
+    }
+
+    @Override
+    public void desligar() {
+
+    }
+
+    @Override
+    public void abrirMenu() {
+
+    }
+
+    @Override
+    public void fecharMenu() {
+
+    }
+
+    @Override
+    public void maisVolume() {
+
+    }
+
+    @Override
+    public void menosVolume() {
+
+    }
+
+    @Override
+    public void ligarMudo() {
+
+    }
+
+    @Override
+    public void desligarMudar() {
+
+    }
+
+    @Override
+    public void play() {
+
+    }
+
+    @Override
+    public void pause() {
+
+    }
+
+
 }
