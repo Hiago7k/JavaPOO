@@ -126,7 +126,7 @@ public class Lutador {
         System.out.printf("Peso: %.1f%n", this.getPeso());
         System.out.printf("Vitorias: %d%n", this.getVitorias());
         System.out.printf("Derrotas: %d%n", this.getDerrotas());
-        System.out.printf("Empates: %d%n", this.getEmpates();
+        System.out.printf("Empates: %d%n", this.getEmpates());
     }
 
     public void status() {
@@ -134,6 +134,6 @@ public class Lutador {
         System.out.printf("Peso: %.1f%n", this.getPeso());
         System.out.printf("Vitorias: %d%n", this.getVitorias());
         System.out.printf("Derrotas: %d%n", this.getDerrotas());
-        System.out.printf("Empates: %d%n", this.getEmpates();
+        System.out.printf("Empates: %d%n", this.getEmpates());
     }
 }
