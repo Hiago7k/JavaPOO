@@ -2,7 +2,7 @@ package Aula07;
 
 public class main {
     static void main() {
-        Lutador[] lutadores = new Lutador[5];
+        Lutador[] lutadores = new Lutador[6];
 
         lutadores[0] = new Lutador("Pretty Boy", 1, 3, 11, 68.9f, 1.75f, 31, "França");
         lutadores[1] = new Lutador("Putscript", 3, 2, 3, 57.8f, 1.68f, 29, "Brasil");
@@ -11,5 +11,6 @@ public class main {
         lutadores[4] = new Lutador("Anderson Silva", 2, 3 ,100, 90f, 1.85f, 25, "Brasil");
         lutadores[5] = new Lutador("Charles Do Bronx", 23, 10, 100, 85f, 1.83f, 27, "Brasil");
 
+        lutadores[3].apresentar();
     }
 }
