@@ -111,11 +111,11 @@ public class Lutador {
     }
 
     public void perderLuta() {
-        this.setEmpates(getEmpates() + 1);
+        this.setDerrotas(getDerrotas() + 1);
     }
 
     public void empatarLuta() {
-        this.setDerrotas(getDerrotas() + 1);
+        this.setEmpates(getEmpates() + 1);
     }
 
     public void apresentar() {

@@ -11,6 +11,7 @@ public class main {
         lutadores[4] = new Lutador("Anderson Silva", 2, 3 ,100, 90f, 1.85f, 25, "Brasil");
         lutadores[5] = new Lutador("Charles Do Bronx", 23, 10, 100, 85f, 1.83f, 27, "Brasil");
 
+        lutadores[3].empatarLuta();
         lutadores[3].apresentar();
     }
 }
