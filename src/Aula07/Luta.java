@@ -55,12 +55,19 @@ public class Luta {
         switch ((int) vencedor) {
             case 0:
                 // empate
+                System.out.println("Empate");
+                desafiante.empatarLuta();
+                desafiado.empatarLuta();
                 break;
             case 1:
                 // Ganhou Desafiado
+                System.out.println("Ganhou desafiado");
+                desafiado.ganharLuta();
                 break;
             case 2:
                 // ganhou Desafiado
+                System.out.println("Ganhou desafiante");
+                desafiante.ganharLuta();
                 break;
         }
 
