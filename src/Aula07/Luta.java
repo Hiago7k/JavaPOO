@@ -19,10 +19,11 @@ public class Luta {
         }
 
         // desafiante e desafiado devem ser lutadores diferentes
-        if (this.desafiado == this.desafiante) {
+        if (desafiado == desafiante) {
             System.out.println("Não pode lutar com você mesmo");
             return false;
         }
+        this.aprovado = true;
 
         // so pode acontecer se estiver aprovado
 
@@ -38,6 +39,7 @@ public class Luta {
 
         this.desafiado = desafiado;
         this.desafiante = desafiante;
+        System.out.println("Luta marcada");
         return true;
     }
 
@@ -48,6 +50,7 @@ public class Luta {
         }
 
         desafiado.apresentar();
+        System.out.println("------------------------");
         desafiante.apresentar();
         // vencedor 0 a 2
         double vencedor = Math.random()/Math.nextDown(0.2);
