@@ -107,15 +107,15 @@ public class Lutador {
 
 
     public void ganharLuta() {
-        this.setVitorias(getVitorias() + 1);
+        this.setVitorias(this.getVitorias() + 1);
     }
 
     public void perderLuta() {
-        this.setDerrotas(getDerrotas() + 1);
+        this.setDerrotas(this.getDerrotas() + 1);
     }
 
     public void empatarLuta() {
-        this.setEmpates(getEmpates() + 1);
+        this.setEmpates(this.getEmpates() + 1);
     }
 
     public void apresentar() {

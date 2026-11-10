@@ -49,9 +49,9 @@ public class Luta {
             return;
         }
 
-        desafiado.apresentar();
+        this.desafiado.apresentar();
         System.out.println("------------------------");
-        desafiante.apresentar();
+        this.desafiante.apresentar();
         // vencedor 0 a 2
         int min = 0;
         int max = 2;
@@ -62,23 +62,22 @@ public class Luta {
             case 0:
                 // empate
                 System.out.println("Empate");
-                desafiante.empatarLuta();
-                desafiado.empatarLuta();
+                this.desafiante.empatarLuta();
+                this.desafiado.empatarLuta();
                 break;
             case 1:
                 // Ganhou Desafiado
                 System.out.println("Ganhou desafiado");
-                desafiado.ganharLuta();
-                desafiante.perderLuta();
+                this.desafiado.ganharLuta();
+                this.desafiante.perderLuta();
                 break;
             case 2:
                 // ganhou Desafiado
                 System.out.println("Ganhou desafiante");
-                desafiante.ganharLuta();
-                desafiado.perderLuta();
+                this.desafiante.ganharLuta();
+                this.desafiado.perderLuta();
                 break;
         }
-
 
     }
 

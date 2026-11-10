@@ -13,9 +13,15 @@ public class main {
 
         Luta UEC01 = new Luta();
         UEC01.marcarLuta(lutadores[0], lutadores[1]);
+         UEC01.lutar();
 
-        UEC01.lutar();
 
+        System.out.println("Valores apos a luta");
+
+
+        lutadores[0].status();
+        System.out.println();
+        lutadores[1].status();
 
     }
 }
