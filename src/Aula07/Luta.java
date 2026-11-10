@@ -69,11 +69,13 @@ public class Luta {
                 // Ganhou Desafiado
                 System.out.println("Ganhou desafiado");
                 desafiado.ganharLuta();
+                desafiante.perderLuta();
                 break;
             case 2:
                 // ganhou Desafiado
                 System.out.println("Ganhou desafiante");
                 desafiante.ganharLuta();
+                desafiado.perderLuta();
                 break;
         }
 
