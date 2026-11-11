@@ -18,10 +18,9 @@ public class main {
 
         System.out.println("Valores apos a luta");
 
-
-        lutadores[0].status();
-        System.out.println();
-        lutadores[1].status();
+//        lutadores[0].status();
+//        System.out.println();
+//        lutadores[1].status();
 
     }
 }
