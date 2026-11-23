@@ -14,9 +14,11 @@ public class Main {
 
         l[0].abrir();
         l[0].folhar(123);
-        l[0].avancarPag();
-        l[0].voltarPag();
         l[0].detalhes();
+
+
+        l[1].detalhes();
+        l[2].detalhes();
 
     }
 }
