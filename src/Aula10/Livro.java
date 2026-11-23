@@ -8,11 +8,11 @@ public class Livro implements Publicacao {
     private boolean aberto;
     private Pessoa leitor;
 
-    public Livro(String titulo, Pessoa leitor, boolean aberto, int pagAtual, int totalPaginas, String autor) {
+    public Livro(String titulo, Pessoa leitor,  int totalPaginas, String autor) {
         this.titulo = titulo;
         this.leitor = leitor;
-        this.aberto = aberto;
-        this.pagAtual = pagAtual;
+        this.aberto = false;
+        this.pagAtual = 0;
         this.totalPaginas = totalPaginas;
         this.autor = autor;
     }
@@ -42,13 +42,15 @@ public class Livro implements Publicacao {
     }
 
     public void detalhes() {
-        System.out.printf("Titulo: %s | Leitor %s | Autor %s | Páginas %d | Página Atual 0  %d | Aberto %b%n",
+        System.out.printf("Titulo: %s | Leitor %s  idade %d sexo: %s | Autor %s | Páginas %d | Página Atual %d | Aberto %s%n",
                 getTitulo(),
                 leitor.getNome(),
+                leitor.getIdade(),
+                leitor.getSexo(),
                 getAutor(),
                 getTotalPaginas(),
                 getPagAtual(),
-                isAberto()
+                isAberto() ? "Aberto" : "Fechado"
         );
     }
 
