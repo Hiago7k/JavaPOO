@@ -16,6 +16,9 @@ public class Bolsista extends Aluno {
     }
 
     // sobrepor o método do Aluno
+    // se o método de pagarMensalidade do aluno fosse final
+    // aqui daria erro
+    // métodos final na mãe não podem ser sobrepostos
     @Override
     public void pagarMensalidade(){
         System.out.printf("%s é bolsista pagamento facilitado", this.getNome());

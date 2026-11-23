@@ -1,10 +1,13 @@
 package Aula12;
 
 public class Aluno extends Pessoa {
+    // se Aluno fosse uma classe Final
+    // bolsista não poderia herdar ela
+
     private int matricula;
     private String curso;
 
-    public void pagarMensalidade(){
+    public void pagarMensalidade() {
         System.out.printf("Pagando mensalidade de aluno do %s %n", this.getNome());
     }
 
