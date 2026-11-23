@@ -5,11 +5,15 @@ public class Funcionario extends Pessoa {
     private boolean trabalhando;
 
     public void mudarTrabalho() {
-        if (this.trabalhando) {
-            this.trabalhando = false;
-        } else {
-            this.trabalhando = true;
-        }
+        // fazer o inverso de maneira mais simplés
+        this.trabalhando = ! this.trabalhando;
+
+// mesma coisa que aqui em cima
+//        if (this.trabalhando) {
+//            this.trabalhando = false;
+//        } else {
+//            this.trabalhando = true;
+//        }
     }
 
     public String getSetor() {
