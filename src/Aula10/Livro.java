@@ -42,7 +42,7 @@ public class Livro implements Publicacao {
     }
 
     public void detalhes() {
-        System.out.printf("Titulo: %s | Leitor %s  idade %d sexo: %s | Autor %s | Páginas %d | Página Atual %d | Aberto %s%n",
+        System.out.printf("Titulo: %s | Leitor %s  idade %d sexo: %s | Autor %s | Páginas %d | Página Atual %d | %s%n",
                 getTitulo(),
                 leitor.getNome(),
                 leitor.getIdade(),
@@ -101,12 +101,19 @@ public class Livro implements Publicacao {
     }
 
     @Override
-    public void folhar() {
+    public void folhar(int p) {
+
+        if (this.totalPaginas < p){
+            System.out.printf("Erro não posso folhar ate esse numero de páginas por que o livro tem menos%n");
+            return;
+        }
+
         if (!isAberto()) {
             System.out.printf("Erro, precisa abrir antes de folhar!%n");
             return;
         }
         System.out.printf("Folhando....%n");
+        this.setPagAtual(p);
     }
 
     @Override

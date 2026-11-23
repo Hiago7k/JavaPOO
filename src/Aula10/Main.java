@@ -12,7 +12,10 @@ public class Main {
         l[1] = new Livro("POO para iniciantes", p[1], 532, "Gustavo Guanabara");
         l[2] = new Livro("Java advanced", p[1], 882, "Maria Candis");
 
-
+        l[0].abrir();
+        l[0].folhar(123);
+        l[0].avancarPag();
+        l[0].voltarPag();
         l[0].detalhes();
 
     }
