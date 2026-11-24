@@ -8,15 +8,12 @@ public class Main {
         Peixe p = new Peixe();
         Ave a = new Ave();
 
+        Canguru canguru = new Canguru();
+        canguru.locomover();
+        System.out.printf("--------------------%n");
 
-//        m.setPeso(35.3f);
-//        m.setCorPelo("marron");
-//        m.alimentar();
-//        m.locomover();
-//        m.emitirSom();
-
-        a.locomover();
-        p.locomover();
-        r.locomover();
+        Cachorro bob = new Cachorro();
+        bob.abanarRabo();
+        bob.emitirSom();
     }
 }
