@@ -1,8 +1,6 @@
 package Aula13;
 
 public class Mamifero extends Animal{
-    // Ao possuir métodos abstratos na super classe, obrigatoriamente
-    // as subclasses precisam implementar esses mesmo métodos
     private String corPelo;
 
     public String getCorPelo() {
