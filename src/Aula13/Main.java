@@ -9,11 +9,14 @@ public class Main {
         Ave a = new Ave();
 
         Canguru canguru = new Canguru();
-        canguru.locomover();
-        System.out.printf("--------------------%n");
-
         Cachorro bob = new Cachorro();
-        bob.abanarRabo();
+        Cobra cobra = new Cobra();
+        Tartaruga tartaruga = new Tartaruga();
+        Goldfish goldfish = new Goldfish();
+        Arara arara = new Arara();
+
+        canguru.locomover();
+        bob.locomover();
         bob.emitirSom();
     }
 }
