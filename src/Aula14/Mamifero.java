@@ -1,7 +1,10 @@
 package Aula14;
 
-public abstract class Mamifero {
-    public abstract void emitirSom();
+public  class Mamifero extends Animal {
 
 
+    @Override
+    public void emitirSom() {
+        System.out.printf("Som de mamifero%n");
+    }
 }
