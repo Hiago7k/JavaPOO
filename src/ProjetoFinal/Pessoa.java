@@ -1,44 +1,44 @@
 package ProjetoFinal;
 
 public class Pessoa {
-    private String nome;
-    private int idade;
-    private String sexo;
-    private int experiencia;
+    protected String nome;
+    protected int idade;
+    protected String sexo;
+    protected int experiencia;
 
-    public void ganharExp() {
+    protected void ganharExp() {
         ///
     }
 
-    public String getNome() {
+    protected String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    protected void setNome(String nome) {
         this.nome = nome;
     }
 
-    public int getIdade() {
+    protected int getIdade() {
         return idade;
     }
 
-    public void setIdade(int idade) {
+    protected void setIdade(int idade) {
         this.idade = idade;
     }
 
-    public String getSexo() {
+    protected String getSexo() {
         return sexo;
     }
 
-    public void setSexo(String sexo) {
+    protected void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
-    public int getExperiencia() {
+    protected int getExperiencia() {
         return experiencia;
     }
 
-    public void setExperiencia(int experiencia) {
+    protected void setExperiencia(int experiencia) {
         this.experiencia = experiencia;
     }
 }

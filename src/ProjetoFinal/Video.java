@@ -1,11 +1,13 @@
 package ProjetoFinal;
 
-public class Video {
+public class Video implements  AcoesVideo{
     private String titulo;
     private int avaliacao;
     private int views;
     private int curtidas;
     private boolean reproduzindo;
+
+
 
     public String getTitulo() {
         return titulo;
@@ -45,5 +47,20 @@ public class Video {
 
     public void setReproduzindo(boolean reproduzindo) {
         this.reproduzindo = reproduzindo;
+    }
+
+    @Override
+    public void play() {
+
+    }
+
+    @Override
+    public void pause() {
+
+    }
+
+    @Override
+    public void like() {
+
     }
 }
